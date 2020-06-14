@@ -1,0 +1,25 @@
+<html> 
+  <head>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head> 
+  <body>
+    <script src="tf.js" type="text/javascript"></script>
+      <h6>Mask/No Mask Classification</h6>
+      <button
+        onClick="showSummary()"
+      >
+        Show Model Summary
+      </button>
+      <input type="file" id="fileid" >
+      <div>
+        <img id="uploadedImg" src="#" alt="img" width="70" height="70" />
+        <button 
+          onClick="predict()">
+          Predict
+        </button>
+      </div>
+      <div id="result">
+      </div>
+  </body>
+</html>
